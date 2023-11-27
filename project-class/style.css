@@ -272,6 +272,8 @@ table {
 .information .message .messageBoard{
 	width: 690px;
 	height: 370px;
+	font-size: 18px;
+	padding-left: 10px;
 }
 .information .message .personalMessages{
 	width: 690px;
