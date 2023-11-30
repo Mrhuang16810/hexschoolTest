@@ -46,10 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.header{
+.wrap{
+	width: 1024px;
 	margin: 0 auto;
-	width: 1510px;
-	height: 40px;
+}
+.header{
+	height: 30px;
 	background-color: rgb(246,246,246);
 	display: flex;
 	flex-direction: row-reverse;
@@ -57,7 +59,7 @@ table {
 }
 .header .twoLinks{
 	display: flex;
-	flex-direction: row-reverse;
+	justify-content: end;
 	align-items: center;
 	padding: 0 5px 0 0;
 	height: 30px;
@@ -69,18 +71,29 @@ table {
 .header .twoLinks li a{
 	margin-left: 5px;
 	text-decoration: none;
+	font-size: 13px;
+	height: 12px;
+	display: block;
+	padding: 5px;
+}
+.header .twoLinks .twoLinks-fb{
+	display: flex;
+	padding-right: 15px;
+	border-right: 3px solid rgb(204, 204, 204);
+}
+.header .twoLinks .twoLinks-fb span{
+	color: rgb(103,113,147);
+	letter-spacing: 2px;
+	margin-left: 5px;
 }
 .header .twoLinks .twoLinks-twritter{
 	display: flex;
 }
-.header .twoLinks .twoLinks-twritter:hover{
-	background-color: rgba(0,0,0,0.05);
-	color: #000;
-	height: 23px;
-	line-height: 23px;
-	font-size: 18px;
+.header .twoLinks .twoLinks-fb:hover,.header .twoLinks .twoLinks-twritter:hover{
+	border: 2px solid #000;
+	padding: 1px;
 }
-.header .twoLinks .twoLinks-twritter a{
+.header .twoLinks .twoLinks-fb a,.header .twoLinks .twoLinks-twritter a{
 	display: flex;
 }
 .header .twoLinks .twoLinks-twritter span{
@@ -88,40 +101,19 @@ table {
 	letter-spacing: 2px;
 	margin-left: 5px;
 }
-.header .twoLinks .and{
-	color: rgb(213,213,215);
-}
-.header .twoLinks .twoLinks-fb{
-	display: flex;
-}
-.header .twoLinks .twoLinks-fb:hover{
-	background-color: rgba(0,0,0,0.05);
-	color: #000;
-	height: 23px;
-	line-height: 23px;
-	font-size: 18px;
-}
-.header .twoLinks .twoLinks-fb a{
-	display: flex;
-}
-.header .twoLinks .twoLinks-fb span{
-	color: rgb(103,113,147);
-	letter-spacing: 2px;
-	margin-left: 5px;
-}
 .titleBox{
-	margin: 0 auto;
-	width: 1510px;
 	display: flex;
 	justify-content: space-between;
-	height: 80px;
-	line-height: 80px;
 }
-.titleBox .indexImg a{
-	height: 80px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.titleBox h1 a{
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+	display: block;
+	padding: 10px;
+	width: 190px;
+	height: 36px;
+	text-indent: 110%;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .titleBox .threeLinks{
 	display: flex;
@@ -130,26 +122,23 @@ table {
 .titleBox .threeLinks li{
 	margin-left: 24px;
 	margin-right: 24px;
-	height: 75px;
-	line-height: 75px;
+	height: 35px;
+	line-height: 35px;
 }
 .titleBox .threeLinks li a{
 	text-decoration: none;
 	color: rgb(148,202,188);
 	font-weight: 900;
-	font-size: 18px;
+	font-size: 14px;
 	display: block;
 }
 .titleBox .threeLinks li a:hover{
 	color: rgb(148,202,188);
 	font-weight: 900;
-	border-bottom: 5px solid rgb(148,202,188);
+	border-bottom: 3px solid rgb(148,202,188);
 }
 .indexBackgroundPic{
-	width: 1510px;
-	height: 520px;
-	border: 1px solid #000;
-	margin: 0 auto;
+	height: 400px;
 	background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -158,28 +147,37 @@ table {
 	justify-content: center;
 }
 .indexBackgroundPic .text{
-	width: 1510px;
-	height: 240px;
+	height: 200px;
 	background-color: rgba(0,0,0,0.3);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 .indexBackgroundPic .text h2{
-	color: #fff;
-	font-size: 50px;
-	letter-spacing: 3px;
-	margin-top: 10px;
+	color: #c0c0c0;
+	text-shadow: 1px 1px 10px #c0c0c0;
+	font-size: 30px;
+	letter-spacing: 5px;
+	margin-top: 20px;
 	margin-left: 30px;
 }
+.indexBackgroundPic .text span{
+	color: #c0c0c0;
+	width: 297px;
+	height: 30px;
+	border-bottom: 3px double #c0c0c0;
+	font-size: 24px;
+	letter-spacing: 3px;
+	margin-top: 20px;
+	margin-left: 70px;
+}
 .subject{
-	width: 1510px;
 	display: flex;
 	justify-content: space-around;
 	margin: 100px auto;
 }
-.subject .items{
-	width: 400px;
+.subject .items1,.subject .items2,.subject .items3{
+	width: 250px;
 	border-left: 1px solid rgb(243,243,245);
 	border-right: 1px solid rgb(243,243,245);
 	border-bottom: 1px solid rgb(243,243,245);
@@ -191,136 +189,145 @@ table {
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 }
-.subject .items h2{
-	font-size: 28px;
+.subject .items1 h2,.subject .items2 h2,.subject .items3 h2{
+	font-size: 20px;
 	font-weight: 900;
 	text-align: center;
 }
-.subject .items p{
-	font-size: 21px;
+.subject .items1 p,.subject .items3 p{
+	font-size: 16px;
 	letter-spacing: 3px;
 	margin-top: 15px;
 	line-height: 32px;
 }
-.subject .items h3{
-	font-size: 22px;
+.subject .items2 p{
+	font-size: 14px;
+	line-height: 28px;
+}
+.subject .items3 h3{
+	font-size: 16px;
 	margin-top: 30px;
 }
-.subject .items ul{
+.subject .items3 ul{
 	list-style: disc;
-	font-size: 20px;
+	font-size: 14px;
 	padding-top: 15px;
 	padding-left: 30px;
 }
-.subject .items ul li{
+.subject .items3 ul li{
 	margin-bottom: 15px;
+	line-height: 20px;
+	margin-top: 15px;
 }
 .tableTitle{
 	text-align: center;
-	font-size: 30px;
+	font-size: 24px;
 	letter-spacing: 3px;
 }
 .compare{
-	width: 1260px;
 	margin: 45px auto 150px auto;
 }
 .compare tr{
 	border-top: 1px solid rgb(227,227,227);
 	border-bottom: 1px solid rgb(227,227,227);
 }
+.compare tr:hover{
+	background: rgba(0,0,0,0.1);
+}
 .compare tr th{
-	width: 315px;
 	text-align: left;
 	padding: 18px 0 18px 35px;
 	font-weight: bold;
 	background-color: rgb(249,247,250);
-	font-size: 18px;
+	font-size: 14px;
 }
 .compare tr td{
-	width: 315px;
+	width: 165px;
 	text-align: left;
 	padding: 18px 0 18px 35px;
-	font-size: 18px;
+	font-size: 14px;
 }
 .compare tr .colorGreen{
 	color: rgb(128,166,157);
 }
 .information{
-	width: 1500px;
-	height: 610px;
-	margin: 0 auto;
-	background-image: url("https://i.imgur.com/gU763Vq.png");
+	padding-bottom: 15px;
+	background: linear-gradient(#00644B,#009771);
 	background-repeat: repeat-x;
 	display: flex;
 	flex-direction: column;
 }
 .information .titleText{
 	color: #fff;
-	font-size: 30px;
-	margin-top: 60px;
+	font-size: 25px;
+	margin-top: 45px;
 	text-align: center;
 }
 .information .titleText p{
 	letter-spacing: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .information .message{
-	margin-top: 15px;
+	margin-top: 25px;
 	display: flex;
 	justify-content: space-around;
 }
 .information .message .messageBoard{
-	width: 690px;
-	height: 370px;
-	font-size: 18px;
+	width: 450px;
+	height: 300px;
+	font-size: 14px;
 	padding-left: 10px;
 }
 .information .message .personalMessages{
-	width: 690px;
-	margin-top: -20px;
+	width: 450px;
 }
-.information .message .personalMessages p{
+.information .message .personalMessages label{
 	color: #fff;
-	font-size: 20px;
+	font-size: 14px;
 	margin-top: 25px;
 	margin-bottom: 5px;
 }
 .information .message .personalMessages input{
-	width: 670px;
-	height: 50px;
-	font-size: 20px;
+	width: 400px;
+	height: 30px;
+	font-size: 14px;
 	padding-left: 15px;
 	border: 1px solid rgb(178,210,206);
 	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
-.information .message .personalMessages .submitBtn{
+.information .message .personalMessages .submit{
 	width: 100px;
 	height: 50px;
 	float: right;
-	margin-top: 30px;
+	margin-top: 20px;
+	margin-right: 30px;
 	background-color: rgb(87,178,155);
-	color: rgb(167,233,227);
+	color: #fff;
+	font-weight: 900;
+	font-size: 14px;
+	cursor: pointer;
+	letter-spacing: 3px;
 }
 .footer{
-	width: 1500px;
-	height: 135px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-.footer img{
-	width: 250px;
-	height: 55px;
-	margin-left: 25px;
-}
-.footer .contactUs{
-	font-size: 20px;
-	margin-right: 25px;
-}
-.footer .contactUs p{
+	margin-top: 20px;
 	margin-bottom: 10px;
 }
-.footer .contactUs p span{
+.footer{
+	padding: 15px;
+}
+.footer .contactUs{
+	font-size: 14px;
+	margin-right: 25px;
+}
+.footer .contactUs li{
+	margin-bottom: 15px;
+}
+.footer .contactUs li a{
 	color: rgb(176,126,138);
+	text-decoration: none;
 }
