@@ -89,9 +89,9 @@ table {
 .header .twoLinks .twoLinks-twritter{
 	display: flex;
 }
-.header .twoLinks .twoLinks-fb:hover,.header .twoLinks .twoLinks-twritter:hover{
+.header .twoLinks .twoLinks-fb a:hover,.header .twoLinks .twoLinks-twritter a:hover{
 	border: 2px solid #000;
-	padding: 1px;
+	padding: 3px;
 }
 .header .twoLinks .twoLinks-fb a,.header .twoLinks .twoLinks-twritter a{
 	display: flex;
