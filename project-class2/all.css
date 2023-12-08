@@ -261,7 +261,7 @@ textarea:focus{
 	height: 52px;
 	background-color: rgb(0,204,153);
 	color: #fff;
-	letter-spacing: 10px;
+	cursor: pointer;
 }
 .footer{
 	height: 132px;
