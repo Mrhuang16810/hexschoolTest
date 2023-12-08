@@ -575,20 +575,21 @@ textarea:focus{
 }
 .faqHeader .banner .search{
 	position: relative;
-	display: inline-block;
+	width: 620px;
+	height: 52px;
 }
 .faqHeader .banner .search input{
 	width: 620px;
 	height: 52px;
-	font-size: 30px;
+	font-size: 20px;
+	padding-left: 15px;
 }
-.faqHeader .banner .search a img{
+.faqHeader .banner .search img{
 	position: absolute;
-	right: 10px;
-	top: calc(50% - 1.5em);
-	width: 27px;
-	height: 27px;
-	padding: 10px;
+	width: 30px;
+	height: 30px;
+	right: 0;
+	margin: 13px;
 }
 .faqContent{
 	margin: 60px auto;
