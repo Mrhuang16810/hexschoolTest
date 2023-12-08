@@ -1,0 +1,685 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 首頁 */
+.wrap{
+	width: 1024px;
+	margin: 0 auto;
+}
+.header{
+	height: 560px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_index.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header .navBar{
+	height: 76px;
+	background: rgba(74,74,74,0.5);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 42px;
+	padding-right: 58px;
+}
+.header .navBar h1{
+	float: left;
+}
+.header .navBar h1 a{
+	width: 180px;
+	height: 36px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png);
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.header .navBar .menu{
+	display: flex;
+}
+.header .navBar .menu li{
+	margin-left: 51px;
+	font-size: 14px;
+}
+.header .navBar .menu li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 20px 10px 22px 10px;
+}
+.header .navBar .menu li a:hover{
+	cursor: pointer;
+	color: rgb(0,204,153);
+	border-bottom: 7px solid rgb(0,204,153);
+}
+.header .titleBox{
+	height: 484px;
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.header .titleBox .text h2{
+	color: rgb(0,204,153);
+	font-size: 48px;
+	line-height: 80px;
+}
+.header .titleBox .text h2 span{
+	color: #fff;
+}
+.header .titleBox .titleBoxBtn{
+	width: 220px;
+	height: 52px;
+	background-color: rgb(0,204,153);
+	border: 1px solid rgb(0,204,153);
+	border-radius: 8px;
+	margin-top: 60px;
+}
+.header .titleBox .titleBoxBtn a{
+	font-weight: 900;
+	font-size: 22px;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 20px;
+}
+.header .titleBox .titleBoxBtn a span{
+	margin-left: 28px;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content .course{
+	width: 940px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.content .course .boxUp{
+	display: flex;
+	justify-content: space-between;
+}
+.content .course .boxUp p{
+	color: rgb(0,204,153);
+	font-size: 36px;
+}
+.content .course .boxUp p span{
+	color: rgb(155,155,155);
+	font-size: 20px;
+	margin-left: 15px;
+}
+.content .course .boxUp .chosenBtn{
+	border: 2px solid rgb(0,204,153);
+	border-radius: 10px;
+	background-color: #fff;
+}
+.content .course .boxUp .chosenBtn a{
+	text-decoration: none;
+	color: rgb(0,204,153);
+	padding: 8px 20px;
+	font-size: 16px;
+	font-weight: 900;
+}
+.content .course .boxDown{
+	width: 940px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+.content .course .boxDown .means{
+	display: flex;
+	justify-content: space-between;
+}
+.content .course .boxDown .means li{
+	width: 260px;
+	border: 1px solid rgba(74,74,74,0.1);
+	box-shadow: 2px 4px 5px rgb(181, 181, 181);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 27px 16px;
+}
+.content .course .boxDown .means li h3{
+	color: rgb(74,74,74);
+	font-size: 20px;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+.content .course .boxDown .means li p{
+	color: rgb(155,155,155);
+	font-size: 16px;
+	line-height: 24px;
+}
+.content .compare{
+	width: 940px;
+	font-size: 16px;
+	color: rgb(50,50,35);
+	font-weight: 900;
+	margin-bottom: 60px;
+}
+.content .compare tr{
+	height: 51px;
+}
+.content .compare tr .mark{
+	color: rgb(0,204,153);
+}
+.content .compare tr th{
+	background-color: rgb(235,235,235);
+}
+.content .compare tr td{
+	border-bottom: 2px solid rgb(235,235,235);
+}
+.content .compare tr th,.content .compare tr td{
+	line-height: 51px;
+	text-align: center;
+}
+.content .send{
+	width: 1024px;
+	height: 396px;
+	background-color: rgb(235,235,235);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.content .send .left{
+	color: rgb(50,50,35);
+	font-size: 30px;
+	font-weight: 900;
+}
+.content .send .left span{
+	line-height: 80px;
+}
+.content .send .right{
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+.content .send .right input{
+	width: 460px;
+	height: 52px;
+	font-size: 20px;
+	padding-left: 21px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+}
+::placeholder{
+	color: rgb(155,155,155);
+}
+input:focus{
+	outline: none;
+}
+textarea:focus{
+	outline: none;
+}
+.content .send .right .submit{
+	width: 140px;
+	height: 52px;
+	background-color: rgb(0,204,153);
+	color: #fff;
+	letter-spacing: 10px;
+}
+.footer{
+	height: 132px;
+	background-color: rgb(50,50,40);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 42px;
+	padding-right: 42px;
+}
+.footer .left{
+	width: 176px;
+	text-align: right;
+}
+.footer .left p{
+	color: rgb(155,155,155);
+	font-size: 16px;
+}
+.footer .right{
+	display: flex;
+}
+.footer .right li{
+	margin-left: 22px;
+}
+/* 課程頁 */
+.courseHeader{
+	height: 560px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_course.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.courseHeader .navBar{
+	height: 76px;
+	background: rgba(74,74,74,0.5);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 42px;
+	padding-right: 58px;
+}
+.courseHeader .navBar h1{
+	float: left;
+}
+.courseHeader .navBar h1 a{
+	width: 180px;
+	height: 36px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png);
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.courseHeader .navBar .menu{
+	display: flex;
+}
+.courseHeader .navBar .menu li{
+	margin-left: 51px;
+	font-size: 14px;
+}
+.courseHeader .navBar .menu li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 20px 10px 22px 10px;
+}
+.courseHeader .navBar .menu li a:hover{
+	cursor: pointer;
+	color: rgb(0,204,153);
+	border-bottom: 7px solid rgb(0,204,153);
+}
+.courseHeader .banner{
+	display: flex;
+	justify-content: space-between;
+}
+.courseHeader .banner .left{
+	height: 484px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 34px;
+}
+.courseHeader .banner .left h2{
+	color: #fff;
+	font-size: 48px;
+	margin-top: -100px;
+	letter-spacing: 2px;
+}
+.courseHeader .banner .left span{
+	color: rgb(0,204,153); 
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+.courseHeader .banner .left .btn{
+	background-color: rgb(0,204,153);
+	border: none;
+	border-radius: 8px;
+	width: 220px;
+	height: 52px;
+	margin-top: 80px;
+}
+.courseHeader .banner .left .btn a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: 900;
+	padding: 13px 20px;
+}
+.courseHeader .banner .left .btn span{
+	color: #fff;
+	font-size: 25px;
+	margin-left: 29px;
+}
+.courseHeader .banner .right{
+	margin-top: 42px;
+	margin-right: 58px;
+}
+.courseContent{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.courseContent .introduction{
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.courseContent .introduction .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 10px;
+}
+.courseContent .introduction .text p{
+	color: rgb(0,204,153);
+	font-size: 36px;
+}
+.courseContent .introduction .text span{
+	color: rgb(50,50,40);
+	font-size: 36px;
+	line-height: 80px;
+}
+.courseContent .introduction ul{
+	color: rgb(155,155,155);
+	list-style:disc;
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.courseContent .introduction ul li{
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 2px;
+}
+.courseContent .fourGoodPoint{
+	width: 611px;
+	margin-bottom: 58px;
+}
+.courseContent .fourGoodPoint .title{
+	margin-bottom: 29px;
+}
+.courseContent .fourGoodPoint .title .bigTitle{
+	font-size: 36px;
+	color: rgb(0,204,153);
+}
+.courseContent .fourGoodPoint .title .smallTitle{
+	font-size: 20px;
+	color: rgb(155,155,155);
+	margin-left: 20px;
+}
+.courseContent .fourGoodPoint li{
+	font-size: 16px;
+	list-style: decimal;
+	color: rgb(50,50,35);
+	line-height: 26px;
+	padding-left: 20px;
+	margin-left: 26px;
+}
+.courseContent .main{
+	width: 621px;
+	margin-bottom: 60px;
+}
+.courseContent .main tr{
+	width: 620px;
+	height: 50px;
+	line-height: 50px;
+}
+.courseContent .main tr td{
+	padding-left: 37px;
+	color: rgb(155,155,155);
+}
+.courseContent .main .color{
+	background-color: rgb(235,235,235);
+}
+.courseContent .main .color td{
+	color: rgb(50,50,35);
+}
+.courseContent .main .title{
+	display: flex;
+	margin-bottom: 29px;
+}
+.courseContent .main .title th{
+	color: rgb(0,204,153);
+	font-size: 36px;
+}
+.courseContent .main .title th span{
+	color: rgb(155,155,155);
+	font-size: 20px;
+	margin-left: 15px;
+}
+.courseContent .signUp{
+	width: 1024px;
+	height: 396px;
+	background-color: rgb(235,235,235);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.courseContent .signUp .text{
+	margin-right: 63px;
+}
+.courseContent .signUp .text span{
+	font-size: 30px;
+	color: rgb(50,50,35);
+	line-height: 60px;
+}
+.courseContent .signUp .btn{
+	background-color: rgb(0,204,153);
+	border: none;
+	width: 220px;
+	height: 52px;
+	border-radius: 8px;
+}
+.courseContent .signUp .btn a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	padding: 15px 28px;
+}
+.courseContent .signUp .btn a span{
+	margin-left: 25px;
+}
+/* 問答頁 */
+.faqHeader{
+	height: 560px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_QA.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.faqHeader .navBar{
+	height: 76px;
+	background: rgba(74,74,74,0.5);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 42px;
+	padding-right: 58px;
+}
+.faqHeader .navBar h1{
+	float: left;
+}
+.faqHeader .navBar h1 a{
+	width: 180px;
+	height: 36px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png);
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.faqHeader .navBar .menu{
+	display: flex;
+}
+.faqHeader .navBar .menu li{
+	margin-left: 51px;
+	font-size: 14px;
+}
+.faqHeader .navBar .menu li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 20px 10px 22px 10px;
+}
+.faqHeader .navBar .menu li a:hover{
+	cursor: pointer;
+	color: rgb(0,204,153);
+	border-bottom: 7px solid rgb(0,204,153);
+}
+.faqHeader .banner{
+	width: 1024px;
+	height: 484px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.faqHeader .banner .text{
+	margin-bottom: 70px;
+	text-align: center;
+}
+.faqHeader .banner .text h2{
+	color: rgb(255,255,255);
+	font-size: 48px;
+}
+.faqHeader .banner .text span{
+	color: rgb(0,204,153);
+	font-size: 24px;
+}
+.faqHeader .banner .search{
+	position: relative;
+	display: inline-block;
+}
+.faqHeader .banner .search input{
+	width: 620px;
+	height: 52px;
+	font-size: 30px;
+}
+.faqHeader .banner .search a img{
+	position: absolute;
+	right: 10px;
+	top: calc(50% - 1.5em);
+	width: 27px;
+	height: 27px;
+	padding: 10px;
+}
+.faqContent{
+	margin: 60px auto;
+	width: 769px;
+}
+.faqContent .question .title h2,.faqContent .payment .title h2,.faqContent .refund .title h2{
+	font-size: 36px;
+	color: rgb(0,204,153);
+}
+.faqContent .question .title h2 span,.faqContent .payment .title h2 span,.faqContent .refund .title h2 span{
+	font-size: 20px;
+	color: rgb(155,155,155);
+	margin-left: 19px;
+}
+.faqContent .question .qa,.faqContent .payment .qa,.faqContent .refund .qa{
+	margin-top: 34px;
+	line-height: 25px;
+}
+.faqContent .payment .qa li .mark,.faqContent .refund .qa li .mark{
+	margin-left: 25px;
+}
+.faqContent .payment .qa li .step{
+	margin-left: 25px;
+}
+.faqContent .question .qa li,.faqContent .payment .qa li,.faqContent .refund .qa li{
+	font-size: 20px;
+	color: rgb(50,50,35);
+	margin-bottom: 30px;
+}
+.faqContent .question .qa li span,.faqContent .payment .qa li span,.faqContent .refund .qa li span{
+	font-size: 16px;
+	color: rgb(155,155,155);
+}
+.faqContent .question .qa li span a,.faqContent .payment .qa li span a,.faqContent .refund .qa li span a{
+	text-decoration: none;
+	color: rgb(0,204,153);
+}
+.faqSend{
+	width: 1024px;
+	height: 598px;
+	background-color: rgb(235,235,235);
+	display: flex;
+	justify-content: space-between;
+}
+.faqSend .left{
+	width: 460px;
+	margin-top: 86px;
+	margin-left: 80px;
+}
+.faqSend .left span{
+	font-size: 30px;
+	color: rgb(50,50,35);
+	line-height: 65px;
+
+}
+.faqSend .right{
+	width: 460px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
+	margin-right: 40px;
+}
+.faqSend .right .text{
+	width: 422px;
+	height: 52px;
+	line-height: 52px;
+	padding-left: 21px;
+	font-size: 20px;
+	border: none;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+.faqSend .right textarea{
+	width: 422px;
+	height: 202px;
+	border: none;
+	font-size: 20px;
+	border-radius: 8px;
+	padding-top: 16px;
+	padding-left: 21px;
+	margin-bottom: 20px;
+	resize: none;
+}
+.faqSend .right .btn{
+	width: 140px;
+	height: 52px;
+	background-color: rgb(0,204,153);
+	color: rgb(255,255,255);
+	font-size: 20px;
+	border: none;
+	border-radius: 8px;
+	font-weight: 900;
+	cursor: pointer;
+}
