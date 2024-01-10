@@ -71,7 +71,7 @@ img{
 	margin-left: 3em;
 }
 .navBar h1 a{
-	background-image: url(/images/Welcome\ -\ Artboard_03\ \(1\).png);
+	background-image: url(images/Welcome\ -\ Artboard_03\ \(1\).png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: block;
@@ -100,7 +100,7 @@ img{
 	background-color: orange;
 }
 .header{
-	background-image: url(/images/Welcome\ -\ header_desktop.png);
+	background-image: url(images/Welcome\ -\ header_desktop.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 420px;
@@ -130,7 +130,7 @@ img{
 }
 @media(max-width:768px){
 	.header{
-		background-image: url(/images/Welcome\ -\ header_mobile.png);
+		background-image: url(images/Welcome\ -\ header_mobile.png);
 	}
 }
 .content1{
@@ -396,7 +396,7 @@ footer .footerTitleContainer{
 }
 footer .footerTitleContainer h2 a{
 	display: block;
-	background-image: url(/images/Welcome\ -\ Cart\ Desktop_03-1.png);
+	background-image: url(images/Welcome\ -\ Cart\ Desktop_03-1.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-indent: 101%;
