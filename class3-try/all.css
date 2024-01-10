@@ -1,0 +1,689 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+*,*::before,*::after{
+	box-sizing:border-box;
+}
+/* css reset end */
+.wrap{
+	max-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+.navBar{
+	height: 80px;
+	line-height: 80px;
+	background-color: rgba(0,0,0,0.75);
+	position: absolute;
+	width: 100%;
+}
+.navBar h1{
+	float: left;
+	margin-left: 3em;
+}
+.navBar h1 a{
+	background-image: url(/images/Welcome\ -\ Artboard_03\ \(1\).png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width: 120px;
+	height: 30px;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-top: 25px;
+}
+.navBar .menu{
+	float: right;
+}
+.navBar .menu li{
+	float: left;
+	margin-right: 1em;
+}
+.navBar .menu li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 0 1em;
+	transition: 0.3s;
+}
+.navBar .menu li a:hover{
+	background-color: orange;
+}
+.header{
+	background-image: url(/images/Welcome\ -\ header_desktop.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 420px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.header .sloganBox{
+	width: 460px;
+	background-color: rgba(0,0,0,0.35);
+	padding: 2em 1em;
+}
+.header .sloganBox h2{
+	font-size: 36px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.header .sloganBox p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	margin-top: 2em;
+	line-height: 24px;
+	letter-spacing: 2px;
+}
+@media(max-width:768px){
+	.header{
+		background-image: url(/images/Welcome\ -\ header_mobile.png);
+	}
+}
+.content1{
+	background-color: rgb(238,233,231);
+}
+.content1 .secretBox{
+	display: flex;
+	justify-content: center;
+}
+.content1 .secretBox .secretText{
+	width: 460px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.content1 .secretBox .secretText span{
+	color: #3D1101;
+	text-align: center;
+	background-color: #fff;
+	position: absolute;
+	top: 20px;
+	font-size: 20px;
+	line-height: 40px;
+	padding: 0 1em;
+	background-color: rgb(238,233,231);
+	z-index: 99;
+}
+.content1 .secretBox .secretText .hrLine{
+	position: absolute;
+	top: 60px;
+	width: 500px;
+	border: 1px solid #979797;
+}
+.content1 .threeSecret{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5em;
+}
+.content1 .threeSecret li{
+	width: 28.33333%;
+	margin: 5em 5%;
+	display: flex;
+	flex-direction: column;
+}
+.content1 .threeSecret li .article p{
+	text-align: center;
+	margin: 1em 0;
+	color: #3D1101;
+}
+.content1 .threeSecret li .article span{
+	font-size: 14px;
+	color: #3D1101;
+	line-height: 16px;
+}
+@media(max-width:768px){
+	.content1 .threeSecret{
+		flex-direction: column;
+	}
+	.content1 .threeSecret li{
+		flex-direction: row;
+		width: 90%;
+		margin: 2em 1em;
+	}
+	.content1 .threeSecret li img{
+		width: 18%;
+	}
+	.content1 .threeSecret li .article{
+		margin-left: 2em;
+	}
+	.content1 .threeSecret li .article p{
+		text-align: left;
+	}
+}
+.content2 .today{
+	display: flex;
+	background-color: #3D1101;
+}
+.content2 .today img{
+	width: 47%;
+	padding: 0 1% 0 2%;
+}
+.content2 .today .introduce{
+	width: 48%;
+	padding: 1% 10% 1% 1%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.content2 .today .introduce span{
+	color: #fff;
+	line-height: 20px;
+}
+.content2 .today .introduce p{
+	color: #fff;
+	margin-top: 1.5em;
+	line-height: 18px;
+}
+@media(max-width:768px){
+	.content2{
+		display: none;
+	}
+}
+.content3{
+	background-color: rgb(238,233,231);
+}
+.content3 .listenning p{
+	text-align: center;
+	padding: 2em 0 1em 0;
+	font-size: 24px;
+	color: #3D1101;
+}
+.content3 .listenning .threePeoples{
+	display: flex;
+	justify-content: space-around;
+}
+.content3 .listenning .threePeoples li{
+	width: 33.33333%;
+	padding: 1em 2em;
+	display: flex;
+}
+.content3 .listenning .threePeoples li img{
+	height: 25%;
+}
+.content3 .listenning .threePeoples .thoughts{
+	padding: 1.5em 1em 0 1.5em;
+	display: flex;
+	flex-direction: column;
+}
+.content3 .listenning .threePeoples .thoughts .topName{
+	color: #3D1101;
+}
+.content3 .listenning .threePeoples .thoughts .article{
+	font-size: 14px;
+	line-height: 25px;
+}
+.content3 .listenning .threePeoples .thoughts .footerName{
+	text-align: right;
+	color: #3d1101bb;
+	font-size: 14px;
+}
+@media(max-width:1024px){
+	.content3 .listenning .threePeoples li{
+		display: block;
+	}
+	.content3 .listenning .threePeoples li img{
+		height: 40%;
+		margin: auto;
+		display: block;
+	}
+}
+@media(max-width:768px){
+	.content3{
+		background-color: rgb(228, 224, 222);
+	}
+	.content3 .listenning .threePeoples{
+		flex-wrap: wrap;
+	}
+	.content3 .listenning .threePeoples li{
+		width: 90%;
+		margin: auto;
+		display: flex;
+	}
+}
+.content4{
+	background-color: #fafafa;
+	padding-bottom: 3em;
+}
+.content4 p{
+	color: #3D1101;
+	font-size: 24px;
+	text-align: center;
+	padding: 3em 0;
+	letter-spacing: 3px;
+	line-height: 36px;
+}
+.content4 .order{
+	display: flex;
+	padding: 0 2em;
+}
+.content4 .order img{
+	width: 50%;
+}
+
+::placeholder{
+	padding-left: 0.5em;
+}
+.content4 .order .sheet{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 1em;
+}
+@media(max-width:670px){
+	.content4 .order .sheet span{
+		margin: 0.5em 0;
+	}
+}
+.content4 .order .sheet .inputContainer{
+	display: flex;
+}
+.content4 .order .sheet .inputContainer .inputFalse{
+	padding-left: 2em;
+}
+.content4 .order .sheet .submitContainer{
+	display: flex;
+	justify-content: end;
+}
+@media(max-width:768px){
+	.content4 .order .sheet .submitContainer{
+		margin-top: 0.5em;
+	}
+}
+.content4 .order .sheet .submitContainer input{
+	padding: 0 1em;
+	margin-right: 1em;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+}
+.content4 .order .sheet .submitContainer input:hover{
+	cursor: pointer;
+}
+.content4 .order .sheet .submitContainer .cansel{
+	background-color: grey;
+}
+.content4 .order .sheet .submitContainer .submit{
+	background-color: rgb(214, 140, 3);
+}
+footer{
+	background-color: rgb(238,233,231);
+	display: flex;
+	padding: 3em 1.5em;
+}
+footer .aboutAndConnection{
+	display: flex;
+	width: 70%;
+}
+footer .aboutAndConnection .about,footer .aboutAndConnection .connection{
+	color: #3D1101;
+}
+footer .aboutAndConnection .about{
+	margin-left: 1em;
+	width: 50%;
+}
+footer .aboutAndConnection .connection{
+	margin-left: 5em;
+	width: 50%;
+}
+footer .aboutAndConnection .about span,footer .aboutAndConnection .connection li{
+	font-size: 14px;
+	line-height: 22px;
+}
+footer .aboutAndConnection .connection li{
+	list-style: disc;
+	list-style-position: inside;
+}
+footer .footerTitleContainer{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+footer .footerTitleContainer h2 a{
+	display: block;
+	background-image: url(/images/Welcome\ -\ Cart\ Desktop_03-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 250px;
+	height: 50px;
+}
+footer .footerTitleContainer .communityLinks{
+	margin-top: 1.5em;
+}
+footer .footerTitleContainer .communityLinks a{
+	text-decoration: none;
+	float: left;
+	width: 33.33333%;
+	padding-right: 5px;
+}
+footer .footerTitleContainer .communityLinks a img{
+	width: 60%;
+	float: right;
+}
+@media(max-width:768px){
+	footer .aboutAndConnection{
+		flex-wrap: wrap;
+	}
+	footer .aboutAndConnection .about,footer .aboutAndConnection .connection{
+		width: 51%;
+	}
+	footer .aboutAndConnection .about{
+		margin: 0 ;
+	}
+	footer .aboutAndConnection .connection{
+		margin: 2em 0 0 0;
+	}
+}
+/* 產品頁product.css */
+.product_content{
+	display: flex;
+}
+@media(max-width:900px){
+	.product_content{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.product_content .onlineMenu{
+	width: 20%;
+	padding: 3em 0 0 2em;
+}
+@media(max-width:900px){
+	.product_content .onlineMenu{
+		width: 50%;
+		padding: 3em 0 0 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+.product_content .onlineMenu p{
+	margin-bottom: 1.5em;
+	font-size: 18px;
+}
+@media(max-width:900px){
+	.product_content .onlineMenu p{
+		font-size: 28px;
+	}
+}
+.product_content .onlineMenu ul li{
+	border-bottom: 1px solid #3D1101;
+}
+@media(max-width:900px){
+	.product_content .onlineMenu ul li{
+		width: 100%;
+	}
+}
+.product_content .onlineMenu ul li a{
+	text-decoration: none;
+	color: #3D1101;
+	font-size: 16px;
+	line-height: 30px;
+	display: block;
+	padding-left: 0.5em;
+}
+@media(max-width:900px){
+	.product_content .onlineMenu ul li a{
+		font-size: 18px;
+		line-height: 45px;
+	}
+}
+.product_content .onlineMenu ul li a:hover{
+	background-color: #3D1101;
+	color: #fff;
+}
+.product_content .hamburger{
+	width: 80%;
+	padding: 3em 0 0 0;
+}
+.product_content .hamburger .bar{
+	display: flex;
+	justify-content: space-between;
+}
+.product_content .hamburger .bar .searchContainer{
+	width: 70%;
+	position: relative;
+}
+.product_content .hamburger .bar .searchContainer input{
+	width: 100%;
+}
+.product_content .hamburger .bar .searchContainer .fa-solid{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #fff;
+	height: 100%;
+	padding: 2px;
+	background-color: #3D1101;
+	display: block;
+}
+.product_content .hamburger .bar ul{
+	display: flex;
+}
+.product_content .hamburger .bar ul .checkout{
+	border-right: 1px solid #3D1101;
+}
+.product_content .hamburger .bar ul .shopping{
+	position: relative;
+}
+.product_content .hamburger .bar ul .shopping img{
+	position: absolute;
+	width: 35%;
+	right: 8%;
+	top: -30%;
+}
+.product_content .hamburger .bar ul li a{
+	text-decoration: none;
+	color: #3D1101;
+	padding: 0 1em;
+}
+.product_content .hamburger .productPage ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.product_content .hamburger .productPage ul li{
+	width: 31.33333%;
+	margin: 3% 1%;
+	box-shadow: 1px 1px 2px rgba(87, 86, 86, 0.9);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media(max-width:900px){
+	.product_content .hamburger .productPage ul li{
+		width: 48%;
+	}
+}
+.product_content .hamburger .productPage ul li{
+	color: #3D1101;
+}
+.product_content .hamburger .productPage ul li h2{
+	font-size: 20px;
+	margin-top: 1em;
+	margin-bottom: 8px;
+}
+.product_content .hamburger .productPage ul li .enName{
+	font-size: 12px;
+	margin-bottom: 8px;
+}
+.product_content .hamburger .productPage ul li .price{
+	font-size: 20px;
+	padding: 1em 1.5em;
+	border-top: 1px solid #3D1101;
+}
+.product_content .hamburger .productPage ul li button{
+	width: 90%;
+	padding: 5px;
+	margin-bottom: 1em;
+	color: #FF5E45;
+	background-color: transparent;
+	border: 2px solid #FF5E45;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.product_content .hamburger .productPage ul li .classMarkContainer{
+	position: relative;
+}
+.product_content .hamburger .productPage ul li .classMarkContainer .mark{
+	position: absolute;
+	width: 50%;
+	top: -10%;
+	right: -5%;
+}
+.product_content .hamburger .productPage ul li .classMarkContainer .like{
+	position: absolute;
+	width: 15%;
+	top: 5%;
+	left: 1%;
+}
+.product_content .hamburger .productPage ul li .classMarkContainer .finishLike{
+	position: absolute;
+	width: 11%;
+	top: 5%;
+	left: 2%;
+}
+/* 登入頁面 */
+.loginContainer{
+	background-color: rgb(238,233,231);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.loginContainer h2{
+	font-size: 48px;
+	font-weight: bold;
+	color: #3D1101;
+	margin: 1em 0 0.1em 0;
+}
+.loginContainer h3{
+	font-size: 20px;
+	color: #3D1101;
+}
+.loginContainer .loginwrap{
+	margin-top: 2em;
+	width: 25%;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.35);
+	padding: 1em;
+	border-top: 3px solid #FF5E45;
+}
+@media(max-width:1000px){
+	.loginContainer .loginwrap{
+		width: 35%;
+	}
+}
+@media(max-width:768px){
+	.loginContainer .loginwrap{
+		width: 50%;
+	}
+}
+.loginContainer .loginwrap .login{
+	text-align: center;
+	font-weight: bold;
+	color: #3D1101;
+}
+.loginContainer .loginwrap .emailWrap{
+	position: relative;
+}
+.loginContainer .loginwrap .emailWrap .fa-regular{
+	position: absolute;
+	left: 3%;
+	top: 18%;
+	color: #3d110153;
+}
+.loginContainer .loginwrap .passwordWrap{
+	position: relative;
+}
+.loginContainer .loginwrap .passwordWrap .fa-solid{
+	position: absolute;
+	left: 3.5%;
+	top: 20%;
+	color: #3d110153;
+}
+.loginContainer .loginwrap input{
+	width: 100%;
+	border-radius: 3px;
+	border: none;
+	line-height: 24px;
+	box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.25);
+}
+.loginContainer .loginwrap .forgot{
+	margin: 0.3em 0 2em 0;
+	font-size: 12px;
+	color: #FF5E45;
+}
+.loginContainer .loginwrap .buttonWrap{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.5em;
+}
+.loginContainer .loginwrap .buttonWrap .register{
+	width: 40%;
+	background-color: rgba(0,0,0,0.35);
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+}
+.loginContainer .loginwrap .buttonWrap .loginBtn{
+	width: 40%;
+	background-color: #F56C23;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+}
